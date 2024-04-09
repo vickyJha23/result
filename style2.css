@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    font-family: "Open sans", sans-serif;
+    background: #fff;
+    display: grid;
+    font-size: 0.87rem;
+ }
+ #result{
+    width: 90vh;
+    margin: 0 auto;
+    max-width: 670px;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    margin-top: 1rem;
+ }
+ .header{
+    width: 100%;
+    overflow: hidden;
+   }
+   .header img{
+    border-top: 30px solid rgb(6, 13, 72);
+    vertical-align: middle;
+    width: 100%;
+    object-fit: cover;
+ }
+ .title{
+      margin: 1rem 0;
+      text-align: center;
+ }
+ .title > * {
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-bottom: 0.75rem;
+ }
+ .container{
+    padding: 0.25rem 0.5rem;
+ }
+ .student_info{
+    border: 1px solid #000;
+    display: flex;
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    /* justify-content: space-around; */
+ }      
+ .student_info > div > *{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    padding: 0.25rem 0.5rem;
+ }
+ .name_label{
+    flex: 10%;
+    text-align: justify !important;
+    font-size: 0.875rem;
+ }
+ .names_data{
+    flex: 40%;
+    font-size: 0.875rem;
+ }
+ .extra_data_label{
+     flex: 20%;
+     font-size: 0.875rem;
+ }
+ .extra_data{
+    flex: 20%;
+    font-size: 0.875rem;
+ }
+ .subject_title{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     place-items: center;
+ }
+ .subject_title > div{
+      width: 100%;
+      text-align: center;
+      border: 1px solid #000;
+      border-right: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding: 0.20rem 0.5rem;
+ }
+ .subject_title > div:last-child{
+    border-right: 1px solid #000;
+ }
+ .sub_con{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+ }
+ .sub_con > *{
+     width: 100%;
+     text-align: center;
+     
+ }
+ .sub_con > *:first-child{
+      text-align: left;
+ }
+ 
+ .sub_con > div > *{
+    border: 1px solid #000;
+    border-right: none;
+    border-top: none;
+    text-transform: uppercase; 
+    padding: 0.20rem 0.5rem;
+    letter-spacing: 2px;
+    font-weight:     600;
+ }
+ 
+ .sub_con > div:last-child{
+      border-right: 1px solid #000;
+ }
+ .cal_result_con{
+    display: flex;
+    margin-bottom: 2rem;
+ }
+ .labelresult{
+     flex: 70%;
+     text-align: right;    
+ }
+ .labelresult > *{
+    border: 1px solid #000;
+    border-top: none;
+    text-transform: uppercase;
+    padding: 0.20rem 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+ }
+
+ .calresult{
+      flex: 30%;
+      text-align: center;
+ }
+ .calresult > *{
+     border: 1px solid #000;
+     border-top: none;
+     border-left: none;
+     text-transform: uppercase;
+     padding: 0.20rem 0.5rem;
+     letter-spacing: 2px;
+ }
+  .signatures{
+       display: flex;
+       justify-content: space-between;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       text-align: center;
+       padding: 0.25rem 0.5rem;
+       font-weight: 600;
+  }
+  .signatures > div{
+       display: flex;
+       flex-direction: column;
+       justify-content: end;
+       align-items: center;
+  }
+  .signatures > div > div{
+      width: 150px;
+      height: 50px;
+      border: 1px solid #ccc;
+  }
+  .college_seal > div{
+      width: 100px !important;
+      height: 100px !important;
+      border-radius: 50%;
+  }
+ .footer img{
+     vertical-align: middle;
+   object-fit: cover;
+ }
+ .btn_container{
+    width: 90vw;
+    margin: 1rem auto;
+    max-width: 670px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+ }
+ .pdf_btn{
+       outline: none;
+       border: none;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       padding: 0.5rem 1rem;
+       font-size: 1rem;
+       cursor: pointer;
+       background: green;
+       color: #fff;
+       border-radius: 0.5rem;
+       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+       transition: all 0.3s linear;
+ }
+ .pdf_btn:hover{
+      background: greenyellow;
+      color: goldenrod;
+ }
+ .totalContainer{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+ }
+ .totalContainer > p{
+   padding: 0.25rem 0.5rem;
+   width: 100%;
+   text-align: center;
+   border: 1px solid #000;
+   text-transform: uppercase;
+   font-weight: 600;
+   border-top: none;
+   border-right: none;
+   letter-spacing: 2px;
+ }
+ .totalContainer > p:first-child{
+    text-align: left;
+ }
+ .totalContainer > p:last-child{
+     border-right: 1px solid #000;
+ }
